@@ -27,3 +27,8 @@ function prevSlide(){
 
 // AUTO SLIDE
 setInterval(nextSlide, 5000);
+
+function toggleMenu() {
+  document.getElementById("navMenu").classList.toggle("show");
+}
+

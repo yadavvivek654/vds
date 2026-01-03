@@ -130,3 +130,48 @@ body{
   padding:20px;
   opacity:.8;
 }
+
+/* ===== MOBILE NAV FIX ===== */
+
+.hamburger{
+  display:none;
+  font-size:28px;
+  color:#fff;
+  cursor:pointer;
+}
+
+/* MOBILE VIEW */
+@media (max-width: 768px){
+
+  .logo{
+    width:140px; /* mobile fit */
+  }
+
+  .hamburger{
+    display:block;
+  }
+
+  .menu{
+    position:absolute;
+    top:70px;
+    right:20px;
+    background:#111;
+    flex-direction:column;
+    width:200px;
+    border-radius:12px;
+    overflow:hidden;
+    display:none;
+    box-shadow:0 10px 30px rgba(0,0,0,.8);
+    z-index:999;
+  }
+
+  .menu a{
+    margin:0;
+    padding:14px;
+    border-bottom:1px solid #222;
+  }
+
+  .menu.show{
+    display:flex;
+  }
+}
